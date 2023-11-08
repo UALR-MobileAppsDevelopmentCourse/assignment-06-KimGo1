@@ -3,6 +3,8 @@ package com.ualr.recyclerviewassignment.model;;
 public class Inbox {
     private String from;
     private String email;
+    private String name;
+    private int image;
     private String message;
     private String date;
     private boolean selected;
@@ -15,10 +17,21 @@ public class Inbox {
         return from;
     }
 
+
     public void setFrom(String from) {
         this.from = from;
     }
 
+    public String getName() {
+        return name;
+    }
+
+
+    public int getImage() { return this.image; }
+
+    public void setName(String name) {
+        this.name = name;
+    }
     public String getEmail() {
         return email;
     }
