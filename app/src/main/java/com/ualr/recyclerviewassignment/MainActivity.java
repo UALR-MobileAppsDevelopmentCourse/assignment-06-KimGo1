@@ -73,10 +73,10 @@ public class MainActivity extends AppCompatActivity implements AdapterListBasic.
             @Override
             public void onClick(View view) {
                 //Add a new item to the top of the list
-                // Inbox newItem = DataGenerator.getRandomInboxItem(MainActivity.this);
-                //mAdapter.addItems(0, newItem); //Assuming the adapter has an addItem method
-                //mAdapter.notifyItemChanged(0);
-                // mBinding.recyclerView.smoothScrollToPosition(0);
+                Inbox newItem = DataGenerator.getRandomInboxItem(MainActivity.this);
+                mAdapter.addItems(0, newItem); //The adapters addItem method
+                mAdapter.notifyItemInserted(0);
+                mBinding.recyclerView.smoothScrollToPosition(0);
                 {
                 }
             }
